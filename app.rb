@@ -21,7 +21,7 @@ class App < Sinatra::Base
   get '/set' do
     session[:foo] = "hello" # set the :foo key of the session hash equal to 'hello' here!
     @session = session
-    if session[:foo] == 'hello'
+    if session[:foo] == 'hell'
       redirect '/fetch'
     else
       "Session value has not been set!"
